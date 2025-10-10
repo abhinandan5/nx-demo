@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/webApp"
+    },
+    {
+      "path": "./apps/webApp2"
+    },
+    {
+      "path": "./libs/shared-ui"
+    }
+  ]
+}
