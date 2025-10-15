@@ -3,17 +3,19 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "artifact-auth": "npx google-artifactregistry-auth --repo-config=./.npmrc -y"
+    "artifact-auth": "GOOGLE_APPLICATION_CREDENTIALS=./.npm/service.json npx google-artifactregistry-auth --repo-config=./.npmrc -y"
   },
   "private": true,
   "dependencies": {
     "@cars24/lego": "^1.8.1",
     "@react-router/node": "^7.2.0",
     "@react-router/serve": "^7.2.0",
+    "axios": "^1.12.2",
     "isbot": "^4.4.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-router": "^7.9.4"
+    "react-router": "^7.9.4",
+    "react-router-dom": "^7.9.4"
   },
   "devDependencies": {
     "@babel/core": "^7.14.5",
@@ -31,6 +33,7 @@
     "@swc/cli": "~0.6.0",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "@tailwindcss/vite": "^4.1.14",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.1.0",
     "@types/node": "20.19.9",
@@ -52,7 +55,7 @@
     "nx": "21.6.4",
     "postcss": "8.4.38",
     "prettier": "^2.6.2",
-    "tailwindcss": "3.4.3",
+    "tailwindcss": "^4.1.14",
     "tslib": "^2.3.0",
     "typescript": "~5.9.2",
     "typescript-eslint": "^8.40.0",

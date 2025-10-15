@@ -7,6 +7,8 @@ import {
   type MetaFunction,
   type LinksFunction,
 } from 'react-router';
+import { ThemeProvider } from '@cars24/lego/components';
+import '@cars24/lego/index.css';
 
 import { AppNav } from './app-nav';
 
@@ -39,8 +41,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <AppNav />
-        {children}
+        <ThemeProvider theme="base">
+          <AppNav />
+          {children}
+        </ThemeProvider>
         <ScrollRestoration />
         <Scripts />
       </body>

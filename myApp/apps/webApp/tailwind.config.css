@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Tailwind v4 configuration using CSS */
+
+
+/* Content paths for scanning */
+@source "../../apps/webApp/{src,pages,components,app}/**/*.{ts,tsx,html}";
+@source "../../libs/**/*.{ts,tsx,html}";

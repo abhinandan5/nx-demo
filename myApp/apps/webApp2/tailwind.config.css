@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* Tailwind v4 configuration using CSS */
+@theme {
+  /* Add your theme customizations here */
+  /* Example: --color-primary: #3b82f6; */
+}
+
+/* Content paths for scanning */
+@source "../../apps/webApp2/src/**/*.{ts,tsx,html}";
+@source "../../libs/**/*.{ts,tsx,html}";

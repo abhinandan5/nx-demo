@@ -1,5 +1,5 @@
 {
-  "name": "@my-app/webApp",
+  "name": "@my-app/webapp",
   "private": true,
   "type": "module",
   "scripts": {},
