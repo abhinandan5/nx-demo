@@ -1,5 +1,6 @@
 import { DogsPage, SharedHeader, SharedSideBar } from '@my-app/shared-ui'
 import { Routes, Route, useNavigate } from 'react-router-dom'
+// eslint-disable-next-line @nx/enforce-module-boundaries
 import baIcon from "/BA.png"
 import BusinessApprovalsPage from '../pages/BusinessApprovalsPage'
 
