@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './app/app';
 import { ThemeProvider } from '@cars24/lego/components';
 import '@cars24/lego/index.css';
+import { Provider } from 'react-redux';
+import {store} from './store'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,10 +13,12 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <StrictMode>
+    <Provider store={store}>
     <BrowserRouter>
       <ThemeProvider theme="base">
         <App />
       </ThemeProvider>
     </BrowserRouter>
+    </Provider>
   </StrictMode>
 );

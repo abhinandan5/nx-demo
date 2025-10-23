@@ -4,9 +4,6 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/webApp"
-    },
-    {
       "path": "./apps/webApp2"
     },
     {

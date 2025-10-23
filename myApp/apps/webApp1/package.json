@@ -1,5 +1,9 @@
 {
   "name": "@my-app/webApp1",
   "version": "0.0.1",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.16",
+    "tailwindcss": "^4.1.16"
+  }
 }
